@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashesh Das Rup - Video Editor Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family for Google-like typography -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Dark background to match the Gemini/Android style */
+            background-color: #121212; 
+        }
+        /* Custom styles for vertical shorts container */
+        .shorts-container {
+            /* Standard mobile vertical aspect ratio (9:16) */
+            aspect-ratio: 9/16; 
+            width: 100%;
+            max-width: 300px; /* Limit max width for desktop view */
+            margin: 0 auto;
+        }
+        .video-category-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .video-category-title::after {
+            content: '';
+            position: absolute;
+            /* Adjusted from left: 0 to handle centering */
+            left: 50%;
+            transform: translateX(-50%); 
+            bottom: 0;
+            height: 3px;
+            width: 50px; /* Subtle underline for a modern look */
+            background-color: #4285F4; /* Google Blue */
+            border-radius: 9999px;
+        }
+        /* Typing effect cursor for better visual feedback */
+        #dynamic-word::after {
+            content: '|';
+            display: inline;
+            animation: blink 0.7s infinite;
+            font-weight: 300;
+            opacity: 1;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* --- Custom POP-UP Smooth Animation CSS --- */
+        /* Define the animation */
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Apply the animation class */
+        .smooth-pop-up {
+            animation: fadeInSlideUp 0.8s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+        /* Delaying subsequent sections */
+        #portfolio > div:nth-child(1) {
+            animation-delay: 0.5s;
+        }
+        #portfolio > div:nth-child(2) {
+            animation-delay: 0.7s;
+        }
+        #portfolio > div:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen">
+
+    <div class="max-w-7xl mx-auto p-4 md:p-8 lg:p-12">
+        <!-- Header - Clean and Minimal -->
+        <header class="flex justify-between items-center py-6 border-b border-gray-800 mb-12 smooth-pop-up" style="animation-delay: 0.1s;">
+            <h1 class="text-3xl font-light tracking-tight text-white">
+                <span class="text-blue-400">A</span>shes<span class="text-red-400">h</span> <span class="text-yellow-400">D</span>as <span class="text-green-400">R</span>up
+            </h1>
+            <a href="#contact" class="text-sm font-medium text-gray-300 hover:text-blue-400 transition duration-300">
+                Contact Me
+            </a>
+        </header>
+
+        <!-- Hero Section - Centered Google Style (Now Animated) -->
+        <section class="text-center mb-20 pt-8 smooth-pop-up" style="animation-delay: 0.3s;">
+            <div class="mb-8">
+                <!-- Profile Picture - Circular and professional -->
+                <img src="https://yt3.googleusercontent.com/PIzLpe5DTzLrQHBP657fRrMTLQtBHgwYxHj3VGiwa7x7nWqqwji0ZkeVlCb5pu_cruqTLGCxb_c=s180-c-k-c0x00ffffff-no-rj" 
+                     alt="Ashesh Das Rup Profile Picture" 
+                     class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-gray-700 shadow-xl transition hover:border-blue-400">
+            </div>
+            
+            <h2 class="text-6xl font-extrabold mb-4 leading-tight tracking-tighter">
+                Crafting <span class="text-blue-400" id="dynamic-word">Stories</span>, Frame by Frame.
+            </h2>
+            <p class="text-xl font-light text-gray-400 max-w-3xl mx-auto">
+                I am a dedicated Professional Video Editor specializing in high-impact, engaging content across gaming, motivation, and education.
+            </p>
+        </section>
+
+        <!-- Portfolio Sections (Now Animated) -->
+        <section id="portfolio" class="space-y-20">
+
+            <!-- 1. Game Videos (Minecraft, etc.) -->
+            <div class="bg-gray-800 p-6 sm:p-10 rounded-xl shadow-2xl smooth-pop-up">
+                <!-- Added text-center here -->
+                <div class="text-center">
+                    <!-- Adjusted to font-light for clean look -->
+                    <h3 class="video-category-title text-4xl font-light mb-8 text-blue-300 mx-auto max-w-lg">
+                        Game Video Editing Showcase
+                    </h3>
+                    <p class="text-gray-400 font-light mb-8 max-w-3xl mx-auto">
+                        High-energy, fast-paced editing for gaming content, including popular titles like Minecraft. Focused on maximizing viewer retention and entertainment value.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Video 1: gGi3dlYmyQg - UPDATED SLOT -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition hover:shadow-blue-500/50">
+                        <div class="aspect-w-16 aspect-h-9" style="padding-bottom: 56.25%; position: relative;">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full rounded-t-lg"
+                                src="https://www.youtube.com/embed/gGi3dlYmyQg" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="p-4 text-gray-300 font-light text-sm">Dynamic showcase of new 1.6 game animations focusing on smooth motion, riding, and cinematic player effects.</p>
+                    </div>
+
+                    <!-- Video 2: 9PL2Vbit6sE (Existing) -->
+                    <div class="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition hover:shadow-blue-500/50">
+                        <div class="aspect-w-16 aspect-h-9" style="padding-bottom: 56.25%; position: relative;">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full rounded-t-lg"
+                                src="https://www.youtube.com/embed/9PL2Vbit6sE" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p class="p-4 text-gray-300 font-light text-sm">Creative edits and cinematic flair for engaging gameplay highlights.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Viral Shorts Showcase (Now Animated) -->
+            <div class="bg-gray-800 p-6 sm:p-10 rounded-xl shadow-2xl smooth-pop-up">
+                <!-- Added text-center here for consistency -->
+                <div class="text-center">
+                    <!-- Adjusted to font-light for clean look -->
+                    <h3 class="video-category-title text-4xl font-light mb-8 text-green-300 mx-auto max-w-lg">
+                        Viral & High-Retention Shorts
+                    </h3>
+                    <p class="text-gray-400 font-light mb-8 max-w-3xl mx-auto">
+                        Expertly cut vertical videos optimized for short-form platforms, covering various niches including motivational and educational content.
+                    </p>
+                </div>
+                
+                <!-- Shorts Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 justify-center">
+
+                    <!-- Motivational Shorts -->
+                    <div class="text-center">
+                        <h4 class="text-lg font-light mb-3 text-gray-200">Motivational</h4>
+                        <div class="shorts-container bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-4 transition hover:shadow-green-500/50">
+                            <iframe 
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/8iOEP2MgKv0?rel=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center hidden sm:block">
+                        <h4 class="text-lg font-light mb-3 text-gray-200">Motivational</h4>
+                        <div class="shorts-container bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-4 transition hover:shadow-green-500/50">
+                            <iframe 
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/dljiVBPnPPk?rel=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- General Shorts -->
+                    <div class="text-center hidden lg:block">
+                        <h4 class="text-lg font-light mb-3 text-gray-200">General/VFX</h4>
+                        <div class="shorts-container bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-4 transition hover:shadow-green-500/50">
+                            <iframe 
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/kR83hGPg-Ko?rel=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="text-center hidden lg:block">
+                        <h4 class="text-lg font-light mb-3 text-gray-200">General/VFX</h4>
+                        <div class="shorts-container bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-4 transition hover:shadow-green-500/50">
+                            <iframe 
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/t7VCEFDONbM?rel=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Educational Shorts -->
+                    <div class="text-center">
+                        <h4 class="text-lg font-light mb-3 text-gray-200">Educational</h4>
+                        <div class="shorts-container bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-4 transition hover:shadow-green-500/50">
+                            <iframe 
+                                class="w-full h-full"
+                                src="https://www.youtube.com/embed/zF0Igdx_C_c?rel=0" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Additional Professional Information (Now Animated) -->
+            <div id="additional-info" class="bg-gray-800 p-6 sm:p-10 rounded-xl shadow-2xl smooth-pop-up">
+                <div class="text-center">
+                    <!-- Adjusted to font-light for clean look -->
+                    <h3 class="video-category-title text-4xl font-light mb-8 text-yellow-300 mx-auto max-w-lg">
+                        Expertise & Core Competencies
+                    </h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-300">
+                    <div>
+                        <h4 class="text-xl font-light mb-3 text-red-400">Pacing & Flow</h4>
+                        <p class="font-light">Mastery in dynamic cuts and transitions to control narrative rhythm, crucial for high-retention content like gaming highlights and viral shorts.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-light mb-3 text-yellow-400">Motion Graphics</h4>
+                        <p class="font-light">Competent in integrating custom text overlays, lower thirds, and animated assets to enhance visual storytelling and branding integrity.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-light mb-3 text-blue-400">Color Correction & Sound Design</h4>
+                        <p class="font-light">Skilled in achieving a professional cinematic look and ensuring crystal-clear audio quality and immersive sound effects for all final products.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section (Now Animated) -->
+        <footer id="contact" class="mt-20 py-10 border-t border-gray-800 text-center smooth-pop-up" style="animation-delay: 1.1s;">
+            <h3 class="text-3xl font-light mb-4">
+                Ready to collaborate?
+            </h3>
+            <p class="text-lg font-light text-gray-400 mb-6">
+                Let's create engaging and high-quality video content together.
+            </p>
+            <a href="mailto:asheshdas794@gmail.com" 
+               class="inline-block px-8 py-3 bg-blue-600 text-white font-medium rounded-full shadow-lg transition duration-300 hover:bg-blue-700 hover:shadow-blue-500/70 transform hover:scale-105">
+                Email Me: asheshdas794@gmail.com
+            </a>
+            <p class="mt-8 text-sm font-light text-gray-600">
+                &copy; 2024 Ashesh Das Rup | Professional Video Editor Portfolio
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript for the Typing/Swiping Effect -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dynamicWordElement = document.getElementById('dynamic-word');
+            const words = ["Stories", "Videos", "Motivations", "Edits"];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 150; // Speed of typing
+            let deleteSpeed = 100; // Speed of deletion
+            let pauseTime = 1500; // Pause at the end of a word
+
+            function typeWriter() {
+                const currentWord = words[wordIndex];
+                
+                if (isDeleting) {
+                    // DELETING
+                    dynamicWordElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                    // Check if deletion is complete
+                    if (charIndex === 0) {
+                        isDeleting = false;
+                        // Move to the next word in the list
+                        wordIndex = (wordIndex + 1) % words.length; 
+                        typingSpeed = 150; // Reset typing speed
+                    }
+                    setTimeout(typeWriter, deleteSpeed);
+                } else {
+                    // TYPING
+                    dynamicWordElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+
+                    // Check if typing is complete
+                    if (charIndex === currentWord.length) {
+                        isDeleting = true;
+                        // Pause before deleting
+                        setTimeout(typeWriter, pauseTime); 
+                    } else {
+                        // Continue typing
+                        setTimeout(typeWriter, typingSpeed);
+                    }
+                }
+            }
+
+            // Start the loop
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
